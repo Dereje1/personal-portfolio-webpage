@@ -1,0 +1,60 @@
+body { 
+    padding-top: 80px; 
+    padding-bottom: 55px;
+}
+.navbar{
+  background-color:black;
+  
+}
+.fixed-top{
+  min-height:70px;
+}
+.fixed-bottom{
+  min-height:50px;
+}
+.navbar-brand{
+  margin-left:7%;
+  color:blue;
+}
+#About{
+  margin-top:-10px;
+  background-color:#e3e7ed;
+  background-image: url("paper.gif")
+}
+
+#Portfolio{
+  border-radius:0px;
+  background-color:black;
+  padding-bottom:5px;
+}
+.portfoliohrstyle{
+  background-color:white;
+}
+.figure-caption{
+  font-size:16px;
+  color:white;
+}
+
+.fa {
+    margin-right: 30px;
+    font-size: 40px;
+    color:white;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+a:hover {
+ cursor:pointer;
+}
+a.fa:hover{
+  color: red;
+  text-decoration: none;
+}
+a.fa:active{
+  color: red;
+}
+a.fa:focus{
+  color:red;
+  text-decoration: none;
+}
