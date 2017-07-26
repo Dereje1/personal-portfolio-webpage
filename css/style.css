@@ -30,19 +30,6 @@ body {
 .portfoliohrstyle{
   background-color:white;
 }
-.subPortfoilo{
-  color:red;
-}
-.carousel-control-prev{
-  position:relative; 
-  width:300px;
-  margin:0 auto;
-}
-.carousel-control-next{
-  position:relative; 
-  width:300px;
-  margin:0 auto;
-}
 .figure-caption{
   font-size:16px;
   color:white;
