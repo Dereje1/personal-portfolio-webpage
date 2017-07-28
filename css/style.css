@@ -28,27 +28,92 @@ body {
   padding-bottom:5px;
 }
 .portfoliohrstyle{
+  margin:0;
   background-color:white;
 }
+#portfolioTitle{
+  color:white;
+}
 .subPortfoilo{
-  color:red;
+  color:#f4e542;
+  font-family:Orbitron;
+  font-size:150%;
+  
 }
-.carousel-control-prev{
-  position:relative; 
-  width:300px;
-  margin:0 auto;
+#carLeft,#carRight{
+  margin-top:10%;
+  color:white;
+  cursor:pointer;
 }
-.carousel-control-next{
-  position:relative; 
-  width:300px;
-  margin:0 auto;
+.front,.back{
+  position: relative;
+  width: 90%;
+  height:275px;
+  margin-left:5%;
+  margin-bottom:5%;
+  border-radius:4%;
+}
+.front{
+  
+  background-color:white;
+}
+.projectHeader{
+  font-family:Anton;
+}
+.story{
+  font-family:Cutive, serif;
+  text-align: left;
+  font-size:15px;
+}
+.back{
+  opacity:0.8;
+  background-color:black;
+}
+.rotator-front {
+   position: absolute;
+   display: block;
+   margin-left:40%;
+   font-size: 40px;
+   bottom: 0;
+}
+.rotator-back {
+   position: absolute;
+   display: block;
+   margin-left:40%;
+   font-size: 40px;
+   top: 90px;
+   color: yellow;
+}
+.cpen {
+   position: absolute;
+   display: block;
+   margin-left:10%;
+   font-size: 40px;
+   bottom: 0;
+   color: cyan;
+}
+.ghubcode {
+   position: absolute;
+   display: block;
+   margin-left:45%;
+   font-size: 40px;
+   bottom: 0;
+   color:lightgreen;
+}
+.ghubpage {
+   position: absolute;
+   display: block;
+   margin-left:75%;
+   font-size: 40px;
+   bottom: 0;
+   color:orangered;
 }
 .figure-caption{
   font-size:16px;
   color:white;
 }
 
-.fa {
+.social {
     margin-right: 30px;
     font-size: 40px;
     color:white;
