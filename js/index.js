@@ -16,9 +16,9 @@ $(".nav-link").on("click", function(){
  }, 2000);
 
 });
-$('.portfolioTitle').css({"font-size": (0.35*minlength)+"%"})
-$('.fa-chevron-left').css({"font-size": (0.35*minlength)+"%"})
-$('.fa-chevron-right').css({"font-size": (0.35*minlength)+"%"})
+$('.portfolioTitle').css({"font-size": (0.3*minlength)+"%"})
+$('.fa-chevron-left').css({"font-size": (0.3*minlength)+"%"})
+$('.fa-chevron-right').css({"font-size": (0.3*minlength)+"%"})
 
 $(".fa-chevron-left").on("click", function(){
  var objConsidered = $(this);
