@@ -36,7 +36,7 @@ $(".fa-chevron-right").on("click", function(){
 //carousel functionality
 $('.carousel').on('slide.bs.carousel', function (event) {
  var portfolioType = event.relatedTarget.id;
-
+console.log(portfolioType)
  switch (portfolioType){
    case 'frontEndBasic':
      $('#frontEnd .subPortfoilo').empty();
@@ -49,6 +49,14 @@ $('.carousel').on('slide.bs.carousel', function (event) {
    case 'frontEndAdvanced':
      $('#frontEnd .subPortfoilo').empty();
      $('#frontEnd .subPortfoilo').append("Advanced");
+     break;
+   case 'datavizReact':
+     $('#dataViz .subPortfoilo').empty();
+     $('#dataViz .subPortfoilo').append("React");
+     break;
+   case 'datavizReactD3':
+     $('#dataViz .subPortfoilo').empty();
+     $('#dataViz .subPortfoilo').append("React/D3");
      break;
    }
  //console.log($('#carouselPortfolio').children()[0].firstElementChild)
