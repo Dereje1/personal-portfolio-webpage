@@ -16,6 +16,7 @@ $(".nav-link").on("click", function(){
  }, 2000);
 
 });
+
 $('.portfolioTitle').css({"font-size": (0.3*minlength)+"%"})
 $('.fa-chevron-left').css({"font-size": (0.3*minlength)+"%"})
 $('.fa-chevron-right').css({"font-size": (0.3*minlength)+"%"})
@@ -36,7 +37,6 @@ $(".fa-chevron-right").on("click", function(){
 //carousel functionality
 $('.carousel').on('slide.bs.carousel', function (event) {
  var portfolioType = event.relatedTarget.id;
-console.log(portfolioType)
  switch (portfolioType){
    case 'frontEndBasic':
      $('#frontEnd .subPortfoilo').empty();
@@ -56,7 +56,11 @@ console.log(portfolioType)
      break;
    case 'datavizReactD3':
      $('#dataViz .subPortfoilo').empty();
-     $('#dataViz .subPortfoilo').append("React/D3");
+     $('#dataViz .subPortfoilo').append("React / D3");
+     break;
+   case 'datavizD3':
+     $('#dataViz .subPortfoilo').empty();
+     $('#dataViz .subPortfoilo').append("D3");
      break;
    }
  //console.log($('#carouselPortfolio').children()[0].firstElementChild)
