@@ -12,7 +12,6 @@ body .navbar .fixed-top {
 }
 
 body .navbar .navbar-brand {
-  margin-left: 7%;
   color: yellow;
 }
 
@@ -166,15 +165,15 @@ body a:hover {
 }
 
 body a.fa:hover {
-  color: red;
+  color: yellow;
   text-decoration: none;
 }
 
 body a.fa:active {
-  color: red;
+  color: yellow;
 }
 
 body a.fa:focus {
-  color: red;
+  color: yellow;
   text-decoration: none;
 }

@@ -8,7 +8,6 @@ body {
          min-height:70px;
        }
        .navbar-brand{
-         margin-left:7%;
          color:yellow;
        }
     }
@@ -145,14 +144,14 @@ body {
      cursor:pointer;
     }
     a.fa:hover{
-      color: red;
+      color: yellow;
       text-decoration: none;
     }
     a.fa:active{
-      color: red;
+      color: yellow;
     }
     a.fa:focus{
-      color:red;
+      color:yellow;
       text-decoration: none;
     }
 }
