@@ -26,12 +26,14 @@ $(".fa-chevron-left").on("click", function(){
  var grandfatherElement = $(objConsidered[0]).parents().eq(2)[0].id;
  if(grandfatherElement==="frontEnd"){$('#carouselPortfolio').carousel('prev');}
  if(grandfatherElement==="dataViz"){$('#carouselPortfolio2').carousel('prev');}
+ if(grandfatherElement==="backEnd"){$('#carouselPortfolio3').carousel('prev');}
 });
 $(".fa-chevron-right").on("click", function(){
  var objConsidered = $(this);
  var grandfatherElement = $(objConsidered[0]).parents().eq(2)[0].id;
  if(grandfatherElement==="frontEnd"){$('#carouselPortfolio').carousel('next');}
  if(grandfatherElement==="dataViz"){$('#carouselPortfolio2').carousel('next');}
+ if(grandfatherElement==="backEnd"){$('#carouselPortfolio3').carousel('next');}
 });
 
 //carousel functionality
@@ -61,6 +63,14 @@ $('.carousel').on('slide.bs.carousel', function (event) {
    case 'datavizD3':
      $('#dataViz .subPortfoilo').empty();
      $('#dataViz .subPortfoilo').append("D3");
+     break;
+   case 'backEndApi':
+     $('#backEnd .subPortfoilo').empty();
+     $('#backEnd .subPortfoilo').append("API Projects");
+     break;
+   case 'backEndApiDynamic':
+     $('#backEnd .subPortfoilo').empty();
+     $('#backEnd .subPortfoilo').append("API / Dynamic Web Apps");
      break;
    }
  //console.log($('#carouselPortfolio').children()[0].firstElementChild)
