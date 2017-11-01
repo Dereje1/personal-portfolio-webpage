@@ -144,6 +144,11 @@ body .figure-caption {
   color: white;
 }
 
+body .not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
 body #Contact {
   padding-top: 3%;
   padding-bottom: 3%;

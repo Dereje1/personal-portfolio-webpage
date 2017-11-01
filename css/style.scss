@@ -125,6 +125,10 @@ body {
       font-size:16px;
       color:white;
     }
+    .not-active{
+      pointer-events: none;
+      cursor: default;
+    }
     #Contact{
       padding-top:3%;
       padding-bottom:3%;

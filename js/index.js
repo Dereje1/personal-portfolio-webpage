@@ -72,6 +72,10 @@ $('.carousel').on('slide.bs.carousel', function (event) {
      $('#backEnd .subPortfoilo').empty();
      $('#backEnd .subPortfoilo').append("API / Dynamic Web Apps");
      break;
+   case 'backEndDynamic':
+     $('#backEnd .subPortfoilo').empty();
+     $('#backEnd .subPortfoilo').append("Dynamic Web Apps");
+     break;
    }
  //console.log($('#carouselPortfolio').children()[0].firstElementChild)
 })
