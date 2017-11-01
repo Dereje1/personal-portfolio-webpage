@@ -14,8 +14,14 @@ $(".nav-link").on("click", function(){
  $('html, body').animate({
    scrollTop: $(menuClicked).offset().top + offset
  }, 2000);
-
 });
+
+function pointerClicked(){
+  $('html, body').animate({
+    scrollTop: $("#Portfolio").offset().top -70
+  }, 2000);
+}
+
 
 $('.portfolioTitle').css({"font-size": (0.3*minlength)+"%"})
 $('.fa-chevron-left').css({"font-size": (0.3*minlength)+"%"})
