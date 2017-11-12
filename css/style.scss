@@ -1,10 +1,11 @@
 $commontext: #f4e542;
-@keyframes test {
+$lightwhite: #d4d4d6;
+@keyframes herotext {
   0%{
-    transform: translateY(-600px);
+    transform: translateY(-300px);
   }
   50%{
-    transform: translateY(-250px);
+    transform: translateY(-150px);
   }
   100%{
     transform: translateY(0px);
@@ -15,15 +16,16 @@ $commontext: #f4e542;
     background: rgba(0, 0, 0, 1);
   }
   50%{
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
   }
   100%{
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 @keyframes portfolioPointer {
   0%{
     transform: translateY(-10px);
+    visibility: visible;
   }
   50%{
     transform: translateY(0px);
@@ -44,7 +46,9 @@ body {
          color: $commontext;
        }
     }
-
+    ul {
+    list-style-type: none;
+  }
 
       #About{
         height: 750px;
@@ -58,15 +62,17 @@ body {
           align-items: center;
           width:100%;
           height:100%;
-          background: rgba(0, 0, 0, 0.3);
+          background: rgba(0, 0, 0, 0.5);
           animation-name: dc;
-          animation-duration: 5s;
+          animation-duration: 3s;
           animation-timing-function: linear;
           animation-iteration-count: 1;
           h1{
+            position: absolute;
+            top: 350px;
             color:$commontext;
-            animation-name: test;
-            animation-duration: 5s;
+            animation-name: herotext;
+            animation-duration: 3s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
           }
@@ -74,8 +80,10 @@ body {
             color:$commontext;
             cursor: pointer;
             font-size: 75px;
+            visibility: hidden;
             animation-name: portfolioPointer;
             animation-duration: 1s;
+            animation-delay: 3s;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
           }
@@ -85,7 +93,7 @@ body {
 
     #Portfolio{
       border-radius:0px;
-      background-color:#252525;
+      background-color:black;
       padding-bottom:5px;
     }
     .portfoliohrstyle{
@@ -93,7 +101,7 @@ body {
       background-color:white;
     }
     .portfolioTitle{
-      color:#ebebeb;
+      color:$lightwhite;
     }
     .subPortfoilo{
       color:#f4e542;
@@ -116,8 +124,10 @@ body {
       cursor:pointer;
     }
     .front{
-
-      background-color:#ebebeb;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color:$lightwhite;
     }
     .projectHeader{
       font-family:Anton;
@@ -128,7 +138,7 @@ body {
       font-size:15px;
     }
     .back{
-      opacity:0.8;
+      opacity:1;
       background-color:black;
     }
     .rotator-front {
